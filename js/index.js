@@ -44,7 +44,6 @@ $(function () {
     } else if (scrollTopval >= 1000 && scrollTopval < 1100) {
       $(".text3").stop().animate(
         {
-          marginTop: "100px",
           opacity: "1",
         },
         500
