@@ -32,25 +32,30 @@ section {
     background: url(../css/images/illust1_resize1201.png) no-repeat 0 0;
     animation: sec1Up 1.7s 1;
 }
+
 .text1 {
     position: absolute;
     width: 400px;
     top: 230px;
     left: 80px;
 }
+
 .text1>h2 {
     font-size: 55px;
     line-height: 1.5em;
     animation: sec1Up 2s 1;
 }
+
 .text1>div {
     margin: 30px 0 0 0;
 }
+
 .text1>div>p {
     text-indent: 10px;
     line-height: 2.3em;
     letter-spacing: 1px;
 }
+
 .text1>p:nth-child(2) {
     margin: 40px 0 0 0;
 }
@@ -60,32 +65,38 @@ section {
     padding: 0 50px;
     box-sizing: border-box;
 }
-.sec2_div{
+
+.sec2_div {
     display: flex;
     flex-direction: row;
     align-items: center;
     width: 100%;
     height: 100%;
 }
-.img2{
+
+.img2 {
     margin: 0 30px 0 0;
     width: 750px;
     height: 500px;
     background: url(../css/images/illust02_resize750.png);
 }
-.text2{
+
+.text2 {
     text-align: center;
 }
+
 .text2>h2 {
     font-size: 40px;
     letter-spacing: 1px;
 }
+
 .text2>p {
     font-size: 18px;
     text-indent: 10px;
     margin-top: 30px;
     letter-spacing: 1px;
 }
+
 .text2>p:last-child>a {
     display: inline-block;
     width: 180px;
@@ -99,18 +110,20 @@ section {
     font-size: 14px;
     color: #fff;
 }
+
 .text2>p:last-child>a:hover {
     background-color: #fff;
     border: #fff;
     color: #333;
 }
 
-.sec3_div{
+.sec3_div {
     width: 100%;
     height: 100%;
     position: relative;
 }
-.text3{
+
+.text3 {
     position: absolute;
     text-align: center;
     width: 100%;
@@ -118,25 +131,30 @@ section {
     top: 120px;
     left: 0;
 }
-.text3>h2{
+
+.text3>h2 {
     font-size: 40px;
     letter-spacing: 1px;
 }
+
 .text3>p:nth-child(2) {
     font-size: 18px;
     margin-top: 30px;
     letter-spacing: 1px;
 
 }
+
 .text3>p:nth-child(3) {
     margin-top: 30px;
     font-size: 18px;
     letter-spacing: 1px;
 
 }
+
 .text3>p:last-child {
     margin-top: 40px;
 }
+
 .text3>p:last-child>a {
     display: inline-block;
     width: 160px;
@@ -148,12 +166,14 @@ section {
     border-radius: 40px;
     font-size: 14px;
 }
+
 .text3>p:last-child>a:hover {
     background-color: #fff;
     border: #fff;
     color: #333;
 }
-.img3{
+
+.img3 {
     position: absolute;
     top: 250px;
     width: 100%;
@@ -166,7 +186,8 @@ section {
     box-sizing: border-box;
     padding: 0 70px;
 }
-.sec4_div{
+
+.sec4_div {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -174,15 +195,18 @@ section {
     width: 100%;
     height: 100%;
 }
-.text4{
+
+.text4 {
     width: 500px;
     margin: 0 0 0 50px;
 }
+
 .text4>h2 {
     font-size: 40px;
     letter-spacing: 1px;
 
 }
+
 .text4>p {
     font-size: 18px;
     margin: 30px 0 0 0;
@@ -190,54 +214,65 @@ section {
     letter-spacing: 1px;
 
 }
+
 .text4>p:nth-child(2) {
     margin: 50px 0 0 0;
 }
+
 .img4 {
     background-color: rgb(20, 97, 97);
     width: 663px;
     height: 480px;
     background: url(./images/illust04_resize663.png) no-repeat 0 0;
 }
-/* 
-.img4 {
-    position: absolute;
-    background-color: rgb(20, 97, 97);
-    width: 663px;
-    height: 480px;
-    top: 170px;
-    right: 250px;
-    background: url(./images/illust04_resize663.png) no-repeat 0 0;
-} */
 
-@media screen and (max-width: 1279px) {
-    .text1 {
-        top: 350px;
-        left: 250px;
-    }
+@media screen and (max-width: 1024px) {
+
     .img1 {
         margin: 0;
         opacity: 0.5;
+        background: url(../css/images/illust1_resize1201.png) no-repeat center 70px / contain;
     }
+
     .text1 {
+        top: 45%;
+        left: 15%;
         display: flex;
         flex-direction: row;
         width: 80%;
         /* background-color: tomato; */
     }
+
     .text1>div {
         display: flex;
         flex-direction: column;
         margin: 0;
-        padding: 50px 0 0 20px;
+        padding: 35px 0 0 20px;
         animation: sec1Up 3s 1;
-        /* background-color: aqua; */
     }
+
     .text1>div>p {
-        /* background-color: #fff; */
-        margin: 0 0 10px 0;
+        margin: 0 0 5px 0;
         font-size: 1.5rem;
         font-weight: bold;
         letter-spacing: 1px;
     }
+
+    .img2{
+        background: url(../css/images/illust02_resize750.png) no-repeat center /contain;
+
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+    /* Desktop */
+}
+
+@media screen and (min-width:768px) and (max-width: 1023px) {
+    /* Tablet */
+}
+
+@media screen and (max-width:767px) {
+    /* Mobile */
 }
