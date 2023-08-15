@@ -28,16 +28,16 @@ section {
 .img1 {
     width: 100%;
     height: 800px;
-    margin: 0 0 0 340px;
-    background: url(../css/images/illust1_resize1201.png) no-repeat 0 0;
+    margin: 0 0 0 10%;
+    background: url(../css/images/illust1_resize1201.png) no-repeat center / contain;
     animation: sec1Up 1.7s 1;
 }
 
 .text1 {
     position: absolute;
-    width: 400px;
+    width: 30%;
     top: 230px;
-    left: 80px;
+    left: 6%;
 }
 
 .text1>h2 {
@@ -47,8 +47,8 @@ section {
 }
 
 .text1>div {
-    margin: 30px 0 0 0;
-}
+    margin: 5% 0 0 0;
+} 
 
 .text1>div>p {
     text-indent: 10px;
@@ -57,12 +57,12 @@ section {
 }
 
 .text1>p:nth-child(2) {
-    margin: 40px 0 0 0;
+    margin: 5% 0 0 0;
 }
 
 .sec2 {
     background-color: aliceblue;
-    padding: 0 50px;
+    padding: 0 5%;
     box-sizing: border-box;
 }
 
@@ -75,8 +75,8 @@ section {
 }
 
 .img2 {
-    margin: 0 30px 0 0;
-    width: 750px;
+    margin: 0 4% 0 0;
+    width: 45%;
     height: 500px;
     background: url(../css/images/illust02_resize750.png) no-repeat center / contain;
 }
@@ -93,7 +93,7 @@ section {
 .text2>p {
     font-size: 18px;
     text-indent: 10px;
-    margin-top: 30px;
+    margin: 5% 0 0 0;
     letter-spacing: 1px;
 }
 
@@ -139,20 +139,20 @@ section {
 
 .text3>p:nth-child(2) {
     font-size: 18px;
-    margin-top: 30px;
+    margin: 3% 0 0 0;
     letter-spacing: 1px;
 
 }
 
 .text3>p:nth-child(3) {
-    margin-top: 30px;
+    margin: 3% 0 0 0;
     font-size: 18px;
     letter-spacing: 1px;
 
 }
 
 .text3>p:last-child {
-    margin-top: 40px;
+    margin: 3% 0 0 0;
 }
 
 .text3>p:last-child>a {
@@ -184,7 +184,7 @@ section {
 .sec4 {
     background-color: aliceblue;
     box-sizing: border-box;
-    padding: 0 70px;
+    padding: 0 5% 0 4%;
 }
 
 .sec4_div {
@@ -198,7 +198,8 @@ section {
 
 .text4 {
     width: 500px;
-    margin: 0 0 0 50px;
+    text-align: center;
+    /* margin: 0 0 0 4%; */
 }
 
 .text4>h2 {
@@ -209,18 +210,17 @@ section {
 
 .text4>p {
     font-size: 18px;
-    margin: 30px 0 0 0;
-    text-indent: 10px;
+    margin: 6% 0 0 0;
+    text-indent: 5px;
     letter-spacing: 1px;
 
 }
 
 .text4>p:nth-child(2) {
-    margin: 50px 0 0 0;
+    margin: 9% 0 0 0;
 }
 
 .img4 {
-    background-color: rgb(20, 97, 97);
     width: 663px;
     height: 480px;
     background: url(./images/illust04_resize663.png) no-repeat center / contain;
@@ -231,74 +231,93 @@ section {
     .img1 {
         margin: 0;
         opacity: 0.5;
-        background: url(../css/images/illust1_resize1201.png) no-repeat center 70px / contain;
+        background: url(../css/images/illust1_resize1201.png) no-repeat center / contain;
     }
 
     .text1 {
         top: 45%;
-        left: 15%;
+        left: 10%;
         display: flex;
         flex-direction: row;
         width: 80%;
-        /* background-color: tomato; */
     }
 
     .text1>div {
         display: flex;
         flex-direction: column;
         margin: 0;
-        padding: 35px 0 0 20px;
+        padding: 1% 0 0 0;
         animation: sec1Up 3s 1;
+        background-color: tomato;
+        width: 75%;
+    }
+    .text1>h2{
+        /* font-size: 2.5em; */
+        font-size: 4vw;
+        padding: 0 3%;
+        width: 40%;
+        background-color: yellow;
     }
 
     .text1>div>p {
-        margin: 0 0 5px 0;
         font-size: 1.5rem;
         font-weight: bold;
         letter-spacing: 1px;
     }
 
-    .img2{
-        margin:0;
+    .img2 {
+        margin: 0;
     }
 
-    .sec2{
+    .sec2 {
         padding: 0 10px;
     }
-    .text2{
+
+    .text2 {
         padding: 0 2%;
     }
-    .text2>h2{
+
+    .text2>h2 {
         font-size: 2rem;
     }
-    .text2>p{
+
+    .text2>p {
         font-size: 1rem;
     }
 
-    .text3{
+    .text3 {
         top: 150px;
     }
 
-    .text4{
+    .sec4_div {
+        justify-content: space-between;
+    }
+
+    .text4 {
         margin: 0;
         padding: 0 4%;
         text-align: center;
     }
 
-    .text4>h2{
+    .text4>h2 {
         font-size: 2rem;
     }
-    .text4>p{
+
+    .text4>p {
         font-size: 1rem;
     }
 
 
 }
 
-@media screen and (min-width:768px) and (max-width: 1023px) {
-
-}
-
 @media screen and (max-width:767px) {
-    /* Mobile */
+
+    .text1{
+        width: 100%;
+        left: 10%;
+        background-color: yellow;
+    }
+    .text1>h2 {
+        font-size: 2.5rem;
+    }
 }
