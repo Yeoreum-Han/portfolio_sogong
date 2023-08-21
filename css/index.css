@@ -41,7 +41,7 @@ section {
 }
 
 .text1>h2 {
-    font-size: 55px;
+    font-size: 3.5vw;
     line-height: 1.5em;
     animation: sec1Up 2s 1;
 }
@@ -184,7 +184,7 @@ section {
 .sec4 {
     background-color: aliceblue;
     box-sizing: border-box;
-    padding: 0 5% 0 4%;
+    padding: 0 10% 0 4%;
 }
 
 .sec4_div {
@@ -226,7 +226,6 @@ section {
 }
 
 @media screen and (max-width: 1024px) {
-
     .img1 {
         margin: 0;
         opacity: 0.5;
@@ -286,7 +285,9 @@ section {
     .text3 {
         top: 150px;
     }
-
+    .sec4{
+        padding: 0 5% 0 4%;
+    }
     .sec4_div {
         justify-content: space-between;
     }
@@ -299,9 +300,6 @@ section {
         font-size: 1.8vw;
     }
 
-    /* .img4{
-        margin: 0 0 0 5%;
-    } */
 }
 
 @media screen and (max-width:767px) {

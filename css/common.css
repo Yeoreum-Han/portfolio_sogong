@@ -2,20 +2,25 @@
   margin: 0;
   color: #333;
 }
+
 ul {
   padding: 0;
 }
+
 li {
   list-style: none;
 }
+
 a {
   text-decoration: none;
   color: inherit;
 }
+
 .hidden,
-.hidden > li {
+.hidden>li {
   display: none;
 }
+
 #userid {
   display: none;
 }
@@ -29,7 +34,8 @@ header {
   height: 85px;
   position: relative;
 }
-header > h1 {
+
+header>h1 {
   width: 180px;
   height: 60px;
   /* border: 1px solid red;
@@ -38,23 +44,27 @@ header > h1 {
   float: left;
   margin-left: 20px;
 }
+
 header::after {
   content: "";
   display: block;
   clear: both;
 }
+
 .nav {
   float: left;
   width: 400px;
   height: 75px;
 }
-.menu > li {
+
+.menu>li {
   box-sizing: border-box;
   width: 120px;
   float: left;
   margin-top: 35px;
 }
-.menu > li > a {
+
+.menu>li>a {
   box-sizing: border-box;
   display: inline-block;
   width: 120px;
@@ -64,17 +74,19 @@ header::after {
   letter-spacing: 2px;
 }
 
-.menu > li > a:hover {
+.menu>li>a:hover {
   font-weight: bold;
   color: #333;
 }
+
 .sub {
   text-align: center;
   /* margin-top: 4px; */
   position: absolute;
   z-index: 2;
 }
-.sub > li > a {
+
+.sub>li>a {
   /* border: 1px solid blue;
     box-sizing: border-box; */
   border-bottom: 1px solid #333;
@@ -85,19 +97,20 @@ header::after {
   line-height: 27px;
   font-size: 14px;
 }
-.sub > li > a:hover {
+
+.sub>li>a:hover {
   font-weight: bold;
   color: #333;
 }
-.sub > li:nth-child(1) > a {
+
+.sub>li:nth-child(1)>a {
   border-top: 1px solid #333;
 }
-.sub > li:nth-child(3) > a {
+
+.sub>li:nth-child(3)>a {
   border-bottom: none;
 }
-/* .contents{
-    position: relative;
-} */
+
 .sub_bg {
   width: 100%;
   height: 108px;
@@ -107,62 +120,101 @@ header::after {
 }
 
 /* footer */
+footer * {
+  font-size: 0.9vw;
+  color: #fff;
+}
 footer {
   background-color: #333;
   width: 100%;
-  height: 320px;
+  height: 20vw;
+  display: flex;
+  flex-direction: column;
+  padding: 5% 5% 5% 0;
+  box-sizing: border-box;
 }
-footer * {
-  color: #fff;
-  font-size: 14px;
-}
+
 .footer_top {
-  width: 80%;
-  height: 160px;
-  border-bottom: 2px solid lightgray;
-  margin-left: 192px;
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-around;
+  align-items: center;
+  height: 40%;
 }
-.footer_top > nav {
+
+.footer_top>nav {
+  width: 30%;
+}
+
+.footer_top>nav>ul>li {
   float: left;
+  margin: 0 5% 0 0;
 }
-.footer_top > nav > ul > li {
-  float: left;
-  margin-right: 20px;
-  margin-top: 110px;
-}
-.footer_top > nav > ul > li:nth-child(1) {
-  margin-left: 60px;
-}
-.footer_top > nav > ul > li > a:hover {
-  font-weight: bold;
-}
-.footer_top > p {
-  float: right;
-  text-align: center;
-  margin-top: 100px;
-  margin-right: 50px;
-}
+
 .footer_bottom {
-  /* border: 1px solid lightseagreen; */
-  width: 80%;
-  height: 150px;
-  margin-left: 192px;
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.1vw 0 0 0;
 }
-.footer_bottom > address {
-  margin-left: 60px;
+.footer_bottom > address{
+  font-size: 0.8vw;
+  margin: 0 9% 0 0.8%;
+}
+.footer_bottom > ul{
+  width: 10%;
+}
+.footer_bottom > ul > li{
+  font-size: 1.2vw;
   float: left;
-  padding-top: 30px;
 }
-.footer_bottom > ul {
-  /* border: 1px solid rgb(245, 173, 215); */
-  float: right;
-  padding-top: 20px;
-  margin-right: 70px;
+.footer_bottom > ul > li{
+  margin: 0 10% 0 0; 
 }
-.footer_bottom > ul > li {
-  float: left;
-  margin-right: 10px;
+.footer_bottom > ul > li:nth-child(4){
+  margin: 0;
 }
-.footer_bottom > ul > li > a > i:hover {
-  color: #ccc;
+
+@media screen and (max-width: 1024px) {
+  .footer_top>nav{
+    width: 40%;
+  }
+  .footer_bottom > ul{
+    margin: 0 5% 0 0;
+  }
+
+  .footer_bottom > address{
+    margin: 0 9% 0 4%;
+  }
+  
 }
+
+@media screen and (max-width:767px) {
+  .footer{
+    padding: 0;
+  }
+  
+  .footer_top, .footer_bottom{
+    height: 50%;
+  }
+  .footer_top>nav {
+    width: 40%;
+  }
+  
+  .footer_top>nav>ul>li {
+    float: left;
+    margin: 0 3% 0 0;
+  }
+  .footer_bottom>address{
+    font-size: 0.7vw;
+    width: 50%;
+    padding: 0 0 0 4%;
+  }
+
+  .footer_bottom > ul{
+    width: 15vw;
+    margin: 0 6% 0 0;
+  }
+} 
