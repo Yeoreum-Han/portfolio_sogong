@@ -208,7 +208,10 @@ footer {
   .menu>li>a{
     width: 16vw;
   }
-
+  .sub>li>a {
+    width: 16vw;
+    font-size: 2vw;
+  }
   .footer{
     padding: 0;
   }
