@@ -192,6 +192,23 @@ footer {
 }
 
 @media screen and (max-width:767px) {
+  header>h1, header>h1>a, header>h1>a>img{
+    padding: 0.5% 0 0 0;
+    width: 20vw;
+  }
+
+  .nav{
+    width: 70vw;
+  }
+
+  .menu>li{
+    font-size: 2vw;
+    width: 16vw;
+  }
+  .menu>li>a{
+    width: 16vw;
+  }
+
   .footer{
     padding: 0;
   }
