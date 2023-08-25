@@ -1,112 +1,119 @@
 @charset 'utf-8';
 
-section{
+section {
     width: 100%;
-    min-width: 1260px;
     position: relative;
     /* background-color: antiquewhite; */
 }
 
-.sec2{
+.sec2 {
     /* background-color: yellow; */
     width: 100%;
     height: auto;
     overflow: hidden;
-    margin: 0 auto;   
+    margin: 0 auto;
 }
 
-.box1,.box2,.box3{
+.box1,
+.box2,
+.box3 {
     margin: 0 auto;
     width: 80%;
     height: 500px;
-    /* background-color: beige; */
     border-bottom: 1px solid #333;
     box-sizing: border-box;
 }
-.box1{
+
+.box1 {
     height: 400px;
     margin-top: 100px;
     border-top: 1px solid #333;
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0 5%;
-
 }
-.aboutImg1{
-    width: 30%;
+
+.aboutImg1 {
+    margin: 0 0 0 2%;
+    width: 45%;
     height: 100px;
     background: url(./images/logo.png) no-repeat center / contain;
 }
-.text1{
-    /* background-color: tomato; */
-    width: 60%;
+
+.text1 {
+    width: 50%;
     height: 60%;
     text-align: center;
+    padding: 5% 0 0 0;
 }
-.text1>ul>li>h2>span::before{
+
+.text1>ul>li>h2>span::before {
     content: "";
     width: 14vw;
-    height: 2.7vw;
+    height: 2vw;
     background-color: #d4edff91;
     position: absolute;
-    top: 10.5%;
+    top: 220px;
     z-index: -1;
 }
+
 h2 {
     font-size: 2.5vw;
     letter-spacing: 5px;
 }
-.text1>ul>li:nth-child(2){
+
+.text1>ul>li:nth-child(2) {
     margin: 3% 0 0 0;
     line-height: 3.3vw;
 }
-/* .aboutImg1{
-    width: 500px;
-    height: 400px;
-    background: url(./images/logo.png) no-repeat 180px 135px;
-    float: left;
-}
-.box1>ul{
-    float: left;
-    width: 855px;
-    height: 160px;
-    margin-top: 100px;
-    text-align: center;
-}
-.box1>ul>li>h2>span::before{
-    content: "";
-    width: 208px;
-    height: 22px;
-    background-color: #d4edff91;
-    position: absolute;
-    top: 230px;
-    z-index: -1;
-}
-h2 {
-    font-size: 38px;
-    letter-spacing: 5px;
-}
-.box1>ul>li:nth-child(2){
-    margin-top: 30px;
-    line-height: 45px;
-}
 
 .box1>ul>li,
-.box3>ul>li{
+.box3>ul>li {
     letter-spacing: 5px;
 }
-.box1>ul>li>span,
-.box3>ul>li>span{
-    font-size: 18px;
+
+.text1>ul>li>span,
+.box3>ul>li>span {
+    font-size: 1vw;
     font-style: italic;
     text-decoration: underline;
-} */
-.box2{
-    clear: both;
+}
+
+.box2 {
     background-color: rgba(240, 248, 255, 0.247);
 }
-.box2>ul>li{
+
+.box2>ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.box2>ul>li { 
+    width: 20vw;
+    height: 12vw;
+    border: 1px solid #a19f9f;
+    border-radius: 5px;
+    letter-spacing: 5px;
+    box-sizing: border-box;
+    box-shadow: 0px 30px 20px -20px #ccc;
+    padding: 4% 2%;
+    text-align: center;
+    margin: 13% 0 0 0;
+    line-height: 2vw;
+    font-size: 1vw;
+}
+.title{
+    display: inline-block;
+    font-size: 1.3vw;
+    font-weight: bold;
+    letter-spacing: 5px;
+    width: 100%;
+    margin: 0 0 3% 0;
+ }
+/* .box2>ul>li{
     float: left;
     width: 300px;
     height: 170px;
@@ -128,22 +135,23 @@ h2 {
     margin-top: 35px;
     margin-left: 50px;
     width: 200px;
-    /* background-color: #d4edff91; */
 }
 .box2>ul>li:nth-child(2){
     display: inline-block;
-}
-.box3{
+} */
+.box3 {
     position: relative;
 }
-.aboutImg3{
+
+.aboutImg3 {
     width: 500px;
     height: 400px;
     background: url(./images/aboutImg3.png) no-repeat 0 50px;
     /* background-color: aqua; */
     float: left;
 }
-.box3>ul{
+
+.box3>ul {
     float: left;
     width: 855px;
     height: 160px;
@@ -151,7 +159,8 @@ h2 {
     /* background-color: rgb(220, 203, 236); */
     text-align: center;
 }
-.box3>ul>li>h2>span::before{
+
+.box3>ul>li>h2>span::before {
     content: "";
     width: 360px;
     height: 22px;
@@ -160,16 +169,21 @@ h2 {
     top: 138px;
     z-index: -1;
 }
-.box3>ul>li:nth-child(2){
+
+.box3>ul>li:nth-child(2) {
     margin-top: 30px;
     line-height: 45px;
 }
 
-@media screen and (max-width:1024px){
-    .box1, .box2, .box3{
+@media screen and (max-width:1024px) {
+
+    .box1,
+    .box2,
+    .box3 {
         background-color: tomato;
     }
-    .box1{
+
+    .box1 {
         padding: 0 5%;
     }
 }
