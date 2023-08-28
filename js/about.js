@@ -3,13 +3,13 @@ $(function(){
        let scrollTopval = $(this).scrollTop();
        if(scrollTopval >= 40 && scrollTopval < 100){
         $('.box2>ul>li').each(function(index){
-            $(this).delay(index*400)
+            $(this).delay(index*300)
             .animate(
-                {marginTop: '9%'},800
+                {marginTop: '25vh'},800
             ).animate(
-                {marginTop:'11%'},800
+                {marginTop:'21vh'},800
             ).animate(
-                {marginTop:'13%'},800
+                {marginTop:'23vh'},800
             );
         });
        } 
