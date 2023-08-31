@@ -186,17 +186,18 @@ h2 {
 
     .text3 {
         width: 70%;
-        margin: 0 2% 0 0; 
+        margin: 0 2% 0 0;
     }
 
     .aboutImg3 {
         width: 40%;
     }
+
     .text3>ul>li>h2>span::before {
         width: 25vw;
         top: 8%;
     }
-    
+
 
 }
 
@@ -217,11 +218,18 @@ h2 {
 
     .aboutImg1 {
         margin: 0;
-        }
+    }
 
     .text1 {
         width: 100%;
         margin: 8% 0 0 0;
+    }
+
+    .text1>ul>li>h2>span::before {
+        content: "";
+        width: 23vw;
+        height: 5vw;
+        top: 3vw;
     }
 
     h2 {
@@ -252,26 +260,44 @@ h2 {
         font-size: 2vw;
         line-height: 2.5em;
     }
+
     .title {
         font-size: 2.7vw;
         margin: 5% 0 10% 0;
     }
 
-    .box3{
-        position: relative;
+    .box3 {
+        flex-direction: column-reverse;
+        padding: 5% 0%;
     }
 
     .aboutImg3 {
         margin: 0;
-        opacity: 0.5;
+        width: 30%;
+        height: 200px;
     }
 
     .text3 {
-        top: 45%;
-        left: 10%;
         display: flex;
         flex-direction: row;
-        width: 80%;
-        position: absolute;
+        width: 100%;
+        margin: 2% 0 0 0;
+        padding: 0;
     }
+
+    .text3>ul {
+        width: 100%;
+    }
+
+    .text3>ul>li:nth-child(2) {
+        line-height: 2.5em;
+    }
+
+    .text3>ul>li>h2>span::before {
+        width: 39vw;
+        top: 4%;
+        height: 3vw;
+
+    }
+
 }
