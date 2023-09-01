@@ -70,7 +70,7 @@ $(function () {
   // 이미지넣기
   for(let i=1; i<=$("li[class^='groupImg']").length; i++){
     $('.groupImg'+i+'>a').css({
-      background : 'url(./css/images/groupimg'+i+'_resize430.png) no-repeat 0 0'
+      background : 'url(./css/images/groupimg'+i+'_resize430.png) no-repeat center/contain'
     });
   };
 
