@@ -1,34 +1,5 @@
 @charset 'utf-8';
 
-/* .sec2{
-    height: 100px;
-}
-.mainCategory>ul{
-    width: 1510px;
-    height: 100px;
-    margin: 0 auto;
-    margin-top: 50px;
-}
-.mainCategory>ul>li{
-    float: left;
-}
-.mainCategory>ul>li>a{
-    display: inline-block;
-    border-bottom: 1px solid #333;
-    box-sizing: border-box;
-    width: 750px;
-    height: 60px;
-    text-align: center;
-    margin-top: 50px;
-    line-height: 60px;
-    font-size: 18px;
-    letter-spacing: 10px;
-    box-sizing: border-box;
-}
-.now{
-    background-color: #333;
-    color: #fff;
-} */
 .sec2 {
     width: 80%;
     height: 18%;
@@ -80,7 +51,6 @@
 .box2,
 .box3 {
     position: relative;
-    /* background-color: yellow; */
     width: inherit;
     margin: 0 auto;
     height: 35vw;
@@ -139,7 +109,7 @@
     font-weight: bold;
     font-style: italic;
     background-color: aliceblue;
-    font-size: 18px;
+    font-size: 1.3vw;
 }
 
 .groupInterview {
@@ -186,7 +156,6 @@
     background: url(../css/images/DDK2.png) no-repeat center/ contain;
     overflow: hidden;
 }
-
 
 .groupImg3 {
     width: 41%;
@@ -254,4 +223,36 @@
 
 .sec3>div:nth-child(3) .groupImg3 {
     background: url(./images/WEV3.png) no-repeat 0 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .groupIntro>li:nth-child(2)>p>span {
+        letter-spacing: 3px;
+    }
+    .groupEvent>li:nth-child(2) {
+        padding: 0;
+        letter-spacing: 3px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .groupImg {
+        margin: 0;
+    }
+    .groupIntro{
+        width: 55%;
+        overflow: hidden;
+        
+    }
+    .groupIntro>li:nth-child(1) {
+        height: 5vw;
+        line-height: 5vw;
+    }
+    .groupIntro>li:nth-child(2) {
+        padding: 0;
+        font-size: 1.2vw;
+    }    
+    .groupIntro>li:nth-child(2)>p>span {
+        font-size: 1.1vw;
+    }
 }
