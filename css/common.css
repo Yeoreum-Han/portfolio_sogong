@@ -30,7 +30,6 @@ header {
   /* border: 1px solid red;
     box-sizing: border-box; */
   width: 100%;
-  min-width: 1260px;
   height: 85px;
   position: relative;
 }
@@ -207,6 +206,9 @@ footer {
   }
   .menu>li>a{
     width: 16vw;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
   .sub>li>a {
     width: 16vw;
