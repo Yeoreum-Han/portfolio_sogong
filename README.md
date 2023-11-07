@@ -30,7 +30,7 @@
 ```
 
 2. 더보기   
-![sogong_moreButton](https://github.com/Yeoreum-Han/courseFiles/assets/127937169/f81b84a8-7345-4b92-9892-1657ae6c3780)   
+![sogong_moreButton](https://github.com/Yeoreum-Han/courseFiles/assets/127937169/f81b84a8-7345-4b92-9892-1657ae6c3780)
 더보기 버튼을 클릭하면 새로운 그룹 6개를 추가로 볼 수 있게 했다. 
 ```js
 /* 처음에는 6개만 보이도록. 7번째 li부터는 hide */
@@ -53,19 +53,15 @@ function imgplus () {
 
 ## 트러블슈팅
 1. 서브카테고리 클릭   
-![md_sogong03](https://github.com/Yeoreum-Han/courseFiles/assets/127937169/5f77af54-09a8-45cc-a7d9-4ba1f975b9cf)   
-서브카테고리를 클릭했을때 active 클래스를 부여하거나 제거한다. 서브카테고리 요소들중에 active클래스는 하나에만 가질수 있다. 
+![md_sogong03](https://github.com/Yeoreum-Han/courseFiles/assets/127937169/5f77af54-09a8-45cc-a7d9-4ba1f975b9cf)
+처음에 서브카테고리를 클릭하면 배경색이 바뀌도록 했더니 클릭한 서브카테고리 모두에 css를 적용할 수 있었다.
+하지만 배경색을 다시 원래대로 바꿀 수 없었고, 서브카테고리 단어들 중 하나에만 적용할 수 없는 문제가 있었다.
+이는 각각 **now클래스를 부여하는 방식**, **active 클래스 여부를 확인한 뒤 부여하거나 제거**하는 방식으로 해결했다.
 
 ```js
-    $('.mainCategory>ul>li').click(function() {
-      var idx = $(this).index();
-      $(".subCategory > ul").hide();
-      $(".subCategory > ul").eq(idx).show();
-    });
-
-    $('.subC_first>li').click(function(){
+    $('.subC_first>li').click(function(){   /* 서브카테고리를 클릭했을때 active 클래스를 부여하거나 제거한다. */
         var idx = $(this).index();
-        if($('.subC_first>li>a').eq(idx).hasClass("active")){
+        if($('.subC_first>li>a').eq(idx).hasClass("active")){  /* active클래스는 서브카테고리 요소들중 하나만 가질수 있다. */
         $('.subC_first>li>a').removeClass("active");
         } else {
         $('.subCategory>ul>li>a').removeClass("active");
@@ -74,11 +70,13 @@ function imgplus () {
     });
     
 ```
-2. 이미지 삽입  
-li 클래스명과와 이미지명을 동일하게 맞추고 for문으로 순환하며 li에 배경으로 이미지를 넣도록 했다. 
+2. 이미지 삽입
+많은 데이터를 작성하고 이미지 삽입을 위해 글마다 동일한 코드를 반복적으로 쓰는 문제가 있었다.
+이를 해결하기 위해 **중복 코드를 for문으로 대체**했고 코드 길이도 줄이면서 효율성을 높일 수 있었다.
+
 ```js
-  for(let i=1; i<=$("li[class^='groupImg']").length; i++){
-    $('.groupImg'+i+'>a').css({
+  for(let i=1; i<=$("li[class^='groupImg']").length; i++){  /* li와 이미지 순서를 동일하게 맞추고 for문으로 순환 */
+    $('.groupImg'+i+'>a').css({                             /* li에 배경으로 이미지 넣음 */
       background : 'url(./css/images/groupimg'+i+'_resize430.png) no-repeat center/contain'
     });
   };
