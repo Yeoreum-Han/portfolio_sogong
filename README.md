@@ -8,7 +8,7 @@
 
 ## 기술스택
 * html5
-* css6
+* css3
 * js
 * jQuery
 
